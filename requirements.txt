@@ -1,0 +1,4 @@
+Flask
+flask-login
+oauth2client
+PyOpenSSL

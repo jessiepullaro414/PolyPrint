@@ -1,0 +1,54 @@
+<html>
+<head>
+
+  <title>PolyPrint Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/style.css">
+  <link href="static/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+<style>
+  header, main, footer {
+    padding-left: 240px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+</style>      
+</head>
+<body>
+
+  <!-- jQuery is required by Materialize to function -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    //custom JS code
+	    $(document).ready(function(){
+      		$('.parallax').parallax();
+    	});
+  </script>
+  
+<ul id="slide-out" class="side-nav fixed">
+	<img class="responsive-img" src="static/PPrint_logo_small_invert.png">
+    <li><p><font size="6" color="white">Poly Print</font></p></li>
+    <h1></h1>
+    <li><a href="/upload" style="BACKGROUND-COLOR: purple" class="waves-effect waves-light btn"><font size="6" color="white"><i class="mdi mdi-dots-horizontal"> Upload</i></font></a></li>
+    <h6></h6>
+    <li><a href="#" style="BACKGROUND-COLOR: purple" class="waves-effect waves-light btn"><font size="6" color="white"><i class="mdi mdi-dots-horizontal"> Status</i></font></a></li>
+    <h6></h6>
+    <li><a href="/logout" style="BACKGROUND-COLOR: purple" class="waves-effect waves-light btn"><font size="6" color="white"><i class="mdi mdi-dots-horizontal">Logout</i></font></a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+	<div class="container">
+		<div class="row" align="center">
+            <h2>Welcome to Poly Print {{ user }}!</h2>
+			 <div class="divider"></div>
+		</div>
+		<div class="row" align="center">
+			<img src="http://wiki.star-conflict.com/uploads/UnderConstruction.png">
+		</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>PolyPrint - Dashboard</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+</head>
+<body>
+  <nav class="purple lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/dashboard" class="brand-logo">Poly Print</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/upload">Upload</a></li>
+        <li><a href="/status"">Status</a></li>
+		<li><a href="/logout">Logout</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/upload"">Upload</a></li>
+        <li><a href="/status"">Status</a></li>
+		<li><a href="/logout">Logout</a></li>
+		</ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center purple-text">Welcome {{ user}}!</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A simple way to manage 3D Printer Labs</h5>
+      </div>
+      <div class="row center">
+        <a href="/upload" id="download-button" class="btn btn-large waves-effect waves-light">Get Started</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Tips and Tricks</h5>
+
+            <p class="light">Coming Soon will be a location where we can help you optimize your prints to utilize the lab as efficently as possible.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Print Queue</h5>
+            <p class="light"><i>List print queue</i></p>
+			</div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Printer Status</h5>
+            <p class="light"><i>List of available printers</i></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer grey">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text">Quick Links</h5>
+          <ul>
+            <li><a class="white-text" href="/dashboard">Dashboard</a></li>
+            <li><a class="white-text" href="/upload"">Upload</a></li>
+            <li><a class="white-text" href="/status">Status</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      A project by Jessie Pullaro, Zach Weingarten & Max Farrell
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+
+  </body>
+</html>
